@@ -1,0 +1,345 @@
+.meqalə-konteyner {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+.bolme {
+    margin-bottom: 30px;
+}
+
+/* Şəkilləri sola yapışdırıb mətni ətrafına dolayır */
+.profil-sekli {
+    float: left;            /* Şəkil sola keçir */
+    width: 300px;           /* Standart ölçü */
+    margin-right: 20px;     /* Mətnlə şəkil arası boşluq */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Gülüstan Sarayı üçün istədiyin BALACA şəkil */
+.balaca-sekil {
+    float: left;
+    width: 200px;           /* Sənin istədiyin kiçik ölçü */
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Başlıqların nizamlanması */
+h1, h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+p {
+    text-align: justify;    /* Mətni hər iki tərəfdən düzləşdirir (Google stili) */
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Open+Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.main-wrapper {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.site-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.site-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #1a2a6c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* KART DİZAYNI */
+.info-card {
+    background: #fff;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+.info-card:hover {
+    transform: scale(1.02); /* Üstünə gələndə bir az böyüyür */
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+.card-inner {
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 30px;
+}
+
+.img-box {
+    flex: 0 0 320px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* Gülüstan sarayı üçün şəkil qutusu balacalaşır */
+.small-img {
+    flex: 0 0 200px;
+}
+
+.img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.info-card:hover .img-box img {
+    transform: scale(1.1); /* Şəklin özü içəridə böyüyür */
+}
+
+.text-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #b21f1f;
+    margin-top: 0;
+    border-bottom: 2px solid #fdbb2d;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.text-box p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Musiqi bölməsi üçün fərqli rəng fonu */
+.music-section {
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+    color: white;
+}
+
+.music-section h2 {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.music-section p {
+    color: #f0f0f0;
+}
+
+
+
+
+
+body {
+    /* Mövcud yazı rəngini və s. saxla, sadəcə bunları əlavə et və ya dəyiş: */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+
+    /* 1. Rəngləri təyin edirik (Mavi tonları) */
+    background: linear-gradient(-45deg, #001219, #005f73, #0a9396, #003366);
+    
+    /* 2. Fonu böyüdürük ki, hərəkət edə bilsin */
+    background-size: 400% 400%;
+    
+    /* 3. Animasiyanı işə salırıq: 10 saniyə, yumşaq keçid, sonsuz təkrar */
+    animation: fonHereketi 10s ease infinite;
+    
+    /* Yazıların hərəkət etməməsi üçün fonu sabitləyirik */
+    background-attachment: fixed;
+}
+
+/* 4. Rəngin "o yana - bu yana" getmə qaydası */
+@keyframes fonHereketi {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: sans-serif;
+    background-color: #f6f6f6;
+    line-height: 1.6;
+    color: #202122;
+}
+
+.article-container {
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #a2a9b1;
+}
+
+h1 {
+    font-family: 'Linux Libertine', Georgia, serif;
+    font-size: 28px;
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: 10px;
+}
+
+/* Wikipedia tipli Sağ Panel */
+.infobox {
+    float: right;
+    width: 270px;
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.infobox img {
+    width: 100%;
+    height: auto;
+}
+
+.infobox-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #cedff2;
+    padding: 5px;
+    display: block;
+}
+
+h2 {
+    border-bottom: 1px solid #a2a9b1;
+    margin-top: 25px;
+}
+
+
+/* Şəklin yerləşdiyi konteyner */
+.infobox-image-container {
+    border: 1px solid #c8ccd1; /* Nazik boz çərçivə */
+    background-color: #ffffff;
+    padding: 3px; /* Şəkil və çərçivə arasındakı məsafə */
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.infobox img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Şəklin altındakı kiçik yazı (caption) */
+.image-caption {
+    font-size: 11px;
+    line-height: 1.4;
+    padding: 5px 0;
+    color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+.infobox-image-container {
+    border: 3px solid rgba(255, 255, 255, 0.5); /* Şəffaf ağ çərçivə */
+    border-radius: 10px;
+    overflow: hidden; /* Şəklin kənarlarının çərçivədən çıxmaması üçün */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.infobox img {
+    width: 100%;
+    height: auto;
+    transition: filter 0.4s ease; /* Bulanıqlıq keçid sürəti */
+}
+
+/* Şəklin üzərinə gələndə bulanıqlıq effekti */
+.infobox-image-container:hover img {
+    filter: blur(4px) grayscale(30%); /* 4px bulanıqlıq və bir az rəng solğunluğu */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
